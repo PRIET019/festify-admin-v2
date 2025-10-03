@@ -1,7 +1,6 @@
 # Festify Admin
 
-## Estructura de directorios
-# 📂 Estructura de un proyecto React + Vite + Tailwind + TypeScript
+## 📂 Estructura de directorios
 
 ## 📂 src/
 Aquí está todo el código de la aplicación.
