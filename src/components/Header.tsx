@@ -6,11 +6,7 @@ export default function Header(){
             <Link to="./" className="font-semibold">Festify Dashboard</Link>
             <nav className="hidden md:flex items-center gap-4 text-sm">
                 <Link to="/artists">Artistas</Link>
-                <Link to="/festivals">Festivales</Link>
-                <Link to="#">Escenarios</Link>
-                <Link to="#">Entradas</Link>
-                <Link to="#">Noticias</Link>
-                <Link to="#">Usuarios</Link>
+                <Link to="#">Albums</Link>
             </nav>
         </div>
     </header>

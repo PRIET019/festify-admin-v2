@@ -146,7 +146,7 @@ export default function EditArtist(){
         const request:ArtistRequest = {
             ...form,
             listeners:form.listeners==""?0 :form.listeners,
-            genres: form.genres.split(","),
+            genres: form.genres.split(",").map(a=>a.trim()),
         }
         try{
             const response = await updateArtist(id, request);
