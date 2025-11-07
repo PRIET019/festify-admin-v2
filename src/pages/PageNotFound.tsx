@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function PageNotFound() {
   return (
+    <>
     <div className="flex flex-col items-center justify-center h-screen text-center p-4">
       <h1 className="text-6xl font-bold text-red-500">404</h1>
       <h2 className="text-2xl mt-4">Página no encontrada</h2>
@@ -16,5 +17,6 @@ export default function PageNotFound() {
         Volver al inicio
       </Link>
     </div>
+    </>
   );
 }

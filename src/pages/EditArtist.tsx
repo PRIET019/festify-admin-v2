@@ -119,7 +119,8 @@ export default function EditArtist(){
     }
 
     if (error) {
-        return <>
+        return( 
+        <>
             <Header/>
             <div className="flex flex-col items-center justify-center h-screen text-center p-4">
                 <h1 className="text-6xl font-bold text-red-500">Error</h1>
@@ -136,6 +137,7 @@ export default function EditArtist(){
             </div>
             <Footer/>
         </>
+        );
     }
 
     const handleSubmitForm = async (e:React.FormEvent<HTMLFormElement>) =>{
@@ -167,7 +169,9 @@ export default function EditArtist(){
 
     const btnSaveClassnames = "px-4 py-2 rounded-lg text-white "+(isValid?"bg-green-900":"bg-gray-400");
 
-    return <>
+    return (
+    <>
+
         <Header/>
         <main className="max-w-4xl mx-auto px-4 py-8">
             <Link to="/artists" className="text-sm px-3 py-2 rounded-lg border">Volver</Link>
@@ -217,4 +221,5 @@ export default function EditArtist(){
         </main>
         <Footer/>
     </>
+    );
 }

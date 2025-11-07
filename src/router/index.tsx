@@ -4,7 +4,7 @@ import PageNotFound from "@/pages/PageNotFound";
 import {ListArtists} from "@/pages/ListArtists.tsx";
 import NewArtist from "@/pages/NewArtist.tsx";
 import EditArtist from "@/pages/EditArtist.tsx";
-
+import ListFestivals from "@/pages/listFestivals";
 
 /**
  * import BaseLayout from "@/layouts/base.tsx";
@@ -28,5 +28,6 @@ export const router = createBrowserRouter([
     {path: "/artists", element: <ListArtists/>},
     {path: "/new-artist", element: <NewArtist/>},
     {path: "/edit-artist/:id", element: <EditArtist/>},
+    {path: "/listFestivals", element: <ListFestivals/>},
     {path: "*", element: <PageNotFound/>},
 ]);
